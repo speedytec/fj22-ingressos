@@ -10,7 +10,7 @@ import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.dao.SalaDao;
 
 @Controller
-public class SesssaoController {
+public class SessaoController {
 	
 	@Autowired
 	private SalaDao salaDao;
