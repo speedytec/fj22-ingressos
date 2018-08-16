@@ -14,6 +14,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Sessao {
@@ -26,8 +27,6 @@ public class Sessao {
 	
 	private LocalTime horario;
 	
-	
-
 	@ManyToOne   
 	private Sala sala;
 	

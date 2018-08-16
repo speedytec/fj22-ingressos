@@ -1,11 +1,8 @@
 package br.com.caelum.ingresso.model.form;
 
 import java.time.LocalTime;
-
 import javax.validation.constraints.NotNull;
-
 import org.springframework.format.annotation.DateTimeFormat;
-
 import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.dao.SalaDao;
 import br.com.caelum.ingresso.model.Filme;
@@ -21,8 +18,8 @@ public class SessaoForm {
 	private Integer salaId;
 	
 	
-	@DateTimeFormat(pattern="HH:mm")
 	@NotNull
+	@DateTimeFormat(pattern="HH:mm")	
 	private LocalTime horario;
 	
 	@NotNull

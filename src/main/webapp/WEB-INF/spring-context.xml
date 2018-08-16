@@ -26,6 +26,7 @@
 		<property name="converters">
 			<set merge="true">
 				<bean class="br.com.caelum.ingresso.converter.YearMonthConverter" />
+				<bean class="br.com.caelum.ingresso.converter.HourMinuteConverter" />
 			</set>
 		</property>
 	</bean>
@@ -36,11 +37,12 @@
 	</bean>
 
 	<bean id="mysqlDS" class="org.apache.commons.dbcp.BasicDataSource">
-		<property name="username" value="root"/>
-		<property name="password" value="caelum"/>
-		<property name="url" value="jdbc:mysql://localhost/ingresso?createDatabaseIfNotExist=true"/>
+		<property name="username" value="cine"/>
+		<property name="password" value="cine1234"/>
+		<property name="url" value="jdbc:mysql://cine.ceh7a2vnjssm.us-west-2.rds.amazonaws.com/cinema?createDatabaseIfNotExist=true&amp;serverTimezone=America/Sao_Paulo"/>
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 	</bean>
+	
 	
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="mysqlDS" />

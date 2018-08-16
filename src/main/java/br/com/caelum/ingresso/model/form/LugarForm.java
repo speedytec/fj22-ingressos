@@ -6,7 +6,7 @@ import org.hibernate.validator.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 /**
- * Created by nando on 03/03/17.
+ * Created by leandro on 03/03/17.
  */
 public class LugarForm {
 
